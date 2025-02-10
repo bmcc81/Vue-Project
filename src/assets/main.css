@@ -30,6 +30,29 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 0;
+    .navbar.navbar-expand-lg.navbar-dark.bg-dark.my-nav {
+      margin-top: 0;
+      background-color: #cfefe1 !important;
+    }
+
+    a:hover {
+      background-color: transparent;
+    }
+    .navbar-brand {
+      display: flex;
+    }
+    .test_project {
+      margin-top: 10px;
+      color: #41b883;
+      font-weight: 500;
+    }
   }
+}
+
+.app-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }

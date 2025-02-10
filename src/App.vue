@@ -5,15 +5,40 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <div class="app-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-nav">
+        <div class="container">
+          <a class="navbar-brand" href="">
+            <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
+            <div class="test_project">Test Project</div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href=""> <RouterLink to="/">Home</RouterLink></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=""> <RouterLink to="/about">About</RouterLink></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
     </div>
   </header>
 
