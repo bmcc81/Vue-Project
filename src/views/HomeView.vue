@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import DisplayAuditJson from '../components/DisplayAuditJson.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <DisplayAuditJson />
   </main>
 </template>
