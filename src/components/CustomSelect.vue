@@ -21,11 +21,6 @@ export default {
       console.log(JSON.stringify(acceptFiles))
 
       console.log(rejectReasons)
-      //   const data = {}
-      //   acceptFiles.then((json) => {
-      //     data = json
-      //     console.log(data)
-      //   })
     }
 
     const { getRootProps, getInputProps, ...rest } = useDropzone({ onDrop })
