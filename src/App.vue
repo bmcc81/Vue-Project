@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Directions from './components/Directions.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <div class="container">
           <a class="navbar-brand" href="">
             <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="50" height="50" />
-            <div class="test_project">Test Project</div>
+            <div class="test_project">Dependencies Auditor</div>
           </a>
           <button
             class="navbar-toggler"
@@ -38,7 +38,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Directions msg="Packages.json Dependencies Audit" />
     </div>
   </header>
 
