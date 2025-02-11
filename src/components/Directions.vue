@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 defineProps<{
   msg: string
 }>()
@@ -8,9 +8,8 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      You’ve successfully created a project with
-      <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
+      Select a packages.json file from your local files and this web application will check your
+      dependencies and output the results
     </h3>
   </div>
 </template>
